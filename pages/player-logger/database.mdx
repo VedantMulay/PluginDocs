@@ -1,0 +1,17 @@
+# Database configuration
+
+Player logger supports two types of database `SQLITE` and `MYSQL`. To enable MySQL database to store
+player data on a remote server configure the details in the `config.yml` file.
+
+## Configuration
+
+```yaml filename="config.yml"  copy
+# Configure your details here
+database:
+    enabled: false
+    host: ''
+    database: ''
+    username: ''
+    password: ''
+    port: '3306'
+```

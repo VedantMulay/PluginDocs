@@ -1,15 +1,23 @@
 {
-  "index": "Introduction",
-  "another": "Another Page",
-  "advanced": "Advanced (A Folder)",
-  "about": {
-    "title": "About",
+  "index": "Welcome",
+  "afk-area": {
+    "title": "AFK Arena",
     "type": "page"
   },
-  "contact": {
-    "title": "Contact ↗",
-    "type": "page",
-    "href": "https://twitter.com/shuding_",
-    "newWindow": true
+  "ultimate-bounty": {
+    "title": "Ultimate Bounty",
+    "type": "page"
+  },
+  "player-logger": {
+    "title": "Player Logger",
+    "type": "page"
+  },
+  "email-linker": {
+    "title": "Email Linker",
+    "type": "page"
+  },
+  "neptune-core": {
+    "title": "Neptune Core",
+    "type": "page"
   }
 }

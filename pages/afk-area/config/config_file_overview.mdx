@@ -1,0 +1,106 @@
+# Config File Overview
+
+There are three configuration files in the plugin `config.yml`, `areas.yml` and `messages.yml`
+
+* `config.yml` - Does not have much things to do just to toggle bStats and a developer command.
+* `areas.yml` - The main configuration for your AFK Areas. All of the data reladted to AFK Areas will be stored here.
+* `messages.yml` - For customizing the messages that plugin sends.
+
+## `config.yml`
+
+````yaml filename="config.yml" copy
+USE_BSTATS: true
+DEBUG_COMMAND: false
+````
+
+## `areas.yml`
+
+````yaml filename="areas.yml" copy
+afk-areas:
+  test:
+    enabled: true
+    world: world
+    commands:
+      commands:
+      - give {player} diamond 1
+      - tell {player} Yay! You got diamonds!
+      enabled: true
+      random:
+        enabled: true
+        commands:
+          command-list-1:
+          - give {player} diamond 3
+          - tell {player} You got extra diamonds <3
+          command-list-2:
+          - give {player} gold 3
+          - tell {player} You got extra gold <3
+    time_required: 10
+    title:
+      enabled: true
+      title: '&2&lAFK AREA'
+      subtitle: You will get rewarded every {minutes} minutes
+    sound:
+      exit:
+        enabled: true
+        sound_effect: ENTITY_ARROW_HIT_PLAYER
+      reward:
+        enabled: true
+        sound_effect: ENTITY_EXPERIENCE_ORB_PICKUP
+      enter:
+        enabled: true
+        sound_effect: ENTITY_ARROW_HIT_PLAYER
+    messages:
+      enter_enabled: true
+      enter: '{prefix} &aYou entered the AFK Zone you will be rewarded every &b{minutes}
+        &aminutes'
+      exit_enabled: true
+      exit: '{prefix} &cYou &c&lleft &cthe AFK Zone'
+      reward_enabled: true
+      reward: '{prefix} &aYou completed your AFK time. You got rewarded'
+    location:
+      minX: -246.0
+      minY: 76.0
+      minZ: -70.0
+      maxX: -253.0
+      maxY: 73.0
+      maxZ: -58.0
+````
+
+## `messages.yml`
+
+````yaml filename="areas.yml" copy
+GENERAL:
+  PREFIX: "&7[&bAFK Area&7]"
+  NO_PERMISSION: "{prefix} &cYou %player_name% don't have permission to execute this command."
+  RELOAD: "{prefix} &aPlugin %player_name% has been reloaded successfully."
+  NO_ARGS: "{prefix} &cNo %player_name% command arguments provided."
+  HELP_1:
+    - '&b&lAFK Area Plugin Help'
+    - '&b/afkarea create <Name> - Create an AFK Area'
+    - '&b/afkarea enable <Name> - Enable the area after setting the positions'
+    - '&b/afkarea disable <Name> - Disable an area'
+    - '&b/afkarea delete <Name> - Delete a AFK Area'
+    - '&b/afkarea list - List all of the AFK Areas.'
+    - '&b/afkarea reload - Reload the config files.'
+AREA_CONFIG:
+  AREA_NOT_EXITS: "{prefix} &cThe %player_name% area does not exist. &fCreate it using &b/afkarea create <name>"
+  AREA_NOT_ENABLED: "{prefix} &cThe %player_name% area is not enabled"
+  AREA_DELETE_SUCCESS: "{prefix} &aArea %player_name% deleted successfully."
+  AREA_ALREADY_EXISTS: "{prefix} &cArea %player_name% already exists."
+  AREA_DISABLE_SUCCESS: "{prefix} &aArea %player_name% &cdisabled &asuccessfully."
+  AREA_ENABLE_SUCCESS: "{prefix} &aArea %player_name% &aenabled &asuccessfully."
+  AREA_CREATION_SUCCESS: "{prefix} &aArea %player_name% created successfully."
+EDIT_MODE:
+  EDIT_MODE_ON: "{prefix} &bEdit mode &aEnabled"
+  EDIT_MODE_OFF: "{prefix} &bEdit mode &cDisabled"
+  EDIT_MODE_INSTRUCTIONS:
+      - "{prefix} &aYou are in edit mode"
+      - "{prefix} &bUse left-click to select first position"
+      - "{prefix} &bUse right-click to select second position"
+      - "{prefix} &bYour changes will be automatically saved in the config."
+  SET_FIRST_POSITION: "{prefix} &aFirst position set"
+  SET_SECOND_POSITION: "{prefix} &aSecond position set"
+  AREA_SELECT_SUCCESS: "{prefix} &aArea successfully selected & saved."
+  SELECT_FIRST: "{prefix} &aNow select first-position by left-clicking"
+  SELECT_SECOND: "{prefix} &aNow select second-position by left-clicking"
+  ````

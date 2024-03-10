@@ -1,0 +1,133 @@
+# AFK Area Configuration
+
+AFK Areas have a lot of things customizable and more things will be add in the future updates.
+
+
+## Area Configuration Section
+
+Here is an example region with the name `test` that I configured.
+
+```yaml filename="config.yml"  copy
+afk-areas:
+  test:
+    enabled: true
+    world: world
+    commands:
+      commands:
+      - give {player} diamond 1
+      - tell {player} Yay! You got diamonds!
+      enabled: true
+      random:
+        enabled: true
+        commands:
+          command-list-1:
+          - give {player} diamond 3
+          - tell {player} You got extra diamonds <3
+          command-list-2:
+          - give {player} gold 3
+          - tell {player} You got extra gold <3
+    time_required: 10
+    title:
+      enabled: true
+      title: '&2&lAFK AREA'
+      subtitle: You will get rewarded every {minutes} minutes
+    sound:
+      exit:
+        enabled: true
+        sound_effect: ENTITY_ARROW_HIT_PLAYER
+      reward:
+        enabled: true
+        sound_effect: ENTITY_EXPERIENCE_ORB_PICKUP
+      enter:
+        enabled: true
+        sound_effect: ENTITY_ARROW_HIT_PLAYER
+    messages:
+      enter_enabled: true
+      enter: '{prefix} &aYou entered the AFK Zone you will be rewarded every &b{minutes}
+        &aminutes'
+      exit_enabled: true
+      exit: '{prefix} &cYou &c&lleft &cthe AFK Zone'
+      reward_enabled: true
+      reward: '{prefix} &aYou completed your AFK time. You got rewarded'
+    location:
+      minX: -246.0
+      minY: 76.0
+      minZ: -70.0
+      maxX: -253.0
+      maxY: 73.0
+      maxZ: -58.0
+      ```
+
+      Uhhh! That's too much to process right? We offer a lot of customization options. Let's explore slowly.
+
+      ### Commands
+      ``` yaml filename="config.yml" copy
+      commands:
+        commands:
+        - give {player} diamond 1
+        - tell {player} Yay! You got diamonds!
+        enabled: true
+        random:
+          enabled: true
+          commands:
+            command-list-1:
+            - give {player} diamond 3
+            - tell {player} You got extra diamonds <3
+            command-list-2:
+            - give {player} gold 3
+            - tell {player} You got extra gold <3
+        ```
+
+    * In the first `commands` list these commands will always be executed when a player completes his AFK Time.
+    * In the `random.commands` section there are multiple lists of commands through which randomly one list of commands will be excecuted.
+    You can add as much commands as you can in a list and as many lists as possible.
+
+    ### Time Required
+      ``` yaml filename="config.yml" copy
+          time_required: 10
+      ```
+    The required time (in minutes) for the player should be AFK to be rewarded.
+    The number should be a whole number no decimal digits are allowed and minimum 1 minute is required.
+
+    ### Title
+      ``` yaml filename="config.yml" copy
+        title:
+          enabled: true
+          title: '&2&lAFK AREA'
+          subtitle: You will get rewarded every {minutes} minutes
+      ```
+
+      You can send player a title on entering the AFK Area. This function is toggleable and enabled by default by the plugin.
+
+          ### Sound
+      ``` yaml filename="config.yml" copy
+        sound:
+          exit:
+            enabled: true
+            sound_effect: ENTITY_ARROW_HIT_PLAYER
+          reward:
+            enabled: true
+            sound_effect: ENTITY_EXPERIENCE_ORB_PICKUP
+          enter:
+            enabled: true
+            sound_effect: ENTITY_ARROW_HIT_PLAYER
+      ```
+
+      You can play a sound when a player leaves a AFK Area and also on when he completes his AFK Time. All minecraft sounds are suported with respect 
+      to your server version.
+
+      ### Enter, Exit and Reward Messages
+        ``` yaml filename="config.yml" copy
+        messages:
+          enter_enabled: true
+          enter: '{prefix} &aYou entered the AFK Zone you will be rewarded every &b{minutes}
+            &aminutes'
+          exit_enabled: true
+          exit: '{prefix} &cYou &c&lleft &cthe AFK Zone'
+          reward_enabled: true
+          reward: '{prefix} &aYou completed your AFK time. You got rewarded'
+      ```
+
+      You can send a message to the player upon entering and leaving the AFK region. Both of the messages are togglable
+
+
