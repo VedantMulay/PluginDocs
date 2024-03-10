@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://docs.vedant.lol/</loc>
+  <lastmod>2024-03-10T11:22:01+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://docs.vedant.lol/afk-area</loc>
+  <lastmod>2024-03-10T11:22:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.vedant.lol/ultimate-bounty</loc>
+  <lastmod>2024-03-10T11:22:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.vedant.lol/player-logger</loc>
+  <lastmod>2024-03-10T11:22:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.vedant.lol/email-linker</loc>
+  <lastmod>2024-03-10T11:22:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.vedant.lol/neptune-core</loc>
+  <lastmod>2024-03-10T11:22:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.vedant.lol/afk-area/commands</loc>
+  <lastmod>2024-03-10T11:22:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.vedant.lol/afk-area/config/config_file_overview</loc>
+  <lastmod>2024-03-10T11:22:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.vedant.lol/afk-area/config/creating_areas</loc>
+  <lastmod>2024-03-10T11:22:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.vedant.lol/afk-area/config/area_configuration</loc>
+  <lastmod>2024-03-10T11:22:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.vedant.lol/afk-area/config/message_configuration</loc>
+  <lastmod>2024-03-10T11:22:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.vedant.lol/afk-area/found_bugs</loc>
+  <lastmod>2024-03-10T11:22:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.vedant.lol/ultimate-bounty/commands-and-permissions</loc>
+  <lastmod>2024-03-10T11:22:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.vedant.lol/ultimate-bounty/placeholders</loc>
+  <lastmod>2024-03-10T11:22:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.vedant.lol/player-logger/commands</loc>
+  <lastmod>2024-03-10T11:22:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.vedant.lol/player-logger/database</loc>
+  <lastmod>2024-03-10T11:22:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.vedant.lol/email-linker/commands</loc>
+  <lastmod>2024-03-10T11:22:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.vedant.lol/neptune-core/permissions</loc>
+  <lastmod>2024-03-10T11:22:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.vedant.lol/neptune-core/commands/staff-commands</loc>
+  <lastmod>2024-03-10T11:22:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.vedant.lol/neptune-core/commands/player-commands</loc>
+  <lastmod>2024-03-10T11:22:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.vedant.lol/neptune-core/friends</loc>
+  <lastmod>2024-03-10T11:22:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>
