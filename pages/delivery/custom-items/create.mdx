@@ -1,0 +1,48 @@
+## Item Configuration
+
+This guide explains how to configure custom items and Oraxen items using a YAML configuration for a deliveries and menu.
+
+### Custom Item Configuration
+
+To create a custom item, you need to provide a configuration section in your YAML file with the following properties:
+
+- `material`: The material of the item (must be a valid Bukkit material).
+- `name`: (Optional) The display name of the item.
+- `lore`: (Optional) A list of lore lines for the item.
+- `enchantments`: (Optional) A list of enchantments in the format `ENCHANTMENT_NAME;LEVEL`.
+- `item_flags`: (Optional) A list of item flags.
+- `custom_model_id`: (Optional) The custom model data ID for the item.
+
+#### Example Configuration
+
+```yaml
+custom_item:
+  material: DIAMOND_SWORD
+  name: "&6Epic Sword"
+  lore:
+    - "&7This is an epic sword"
+    - "&7with special powers."
+  item_flags:
+    - "HIDE_ENCHANTS"
+    - "HIDE_ATTRIBUTES"
+  custom_model_id: 123456
+```
+
+### Oraxen Item Configuration
+To create an Oraxen item, specify the `material` property with the prefix `oraxen-` followed by the Oraxen item ID. The configuration for other properties remains the same as for custom items.
+
+#### Example Configuration
+
+
+```yaml
+oraxen_item:
+  material: oraxen-mythic_sword
+  name: "&5Mythic Sword"
+  lore:
+    - "&7This sword is imbued with"
+    - "&7mythical powers."
+  item_flags:
+    - "HIDE_ENCHANTS"
+    - "HIDE_ATTRIBUTES"
+  custom_model_id: 789012
+```

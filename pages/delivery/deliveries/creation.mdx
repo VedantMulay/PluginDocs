@@ -1,0 +1,35 @@
+# Creating custom deliveries
+
+For creating deliveries the file `deliveries.yml` is used. There are already default deliveries configured but if you want to add your own you can!
+
+## Creating a delivery
+
+Creating a custom delivery is simple! Here's a simple example.
+
+```yml filename="config.yml"  copy
+custom-delivery:
+    claim_interval: 24h
+    item:
+      material: CHEST_MINECART
+      name: "&7Daily Delivery"
+      lore:
+        - "&fClaim your daily delivery"
+        - ""
+        - "&eClick here to claim your daily delivery"
+    claimed_item:
+      material: MINECART
+      name: "&7Daily Delivery &e&lCLAIMED"
+      lore:
+        - "&fYou have claimed your daily delivery please come back later."
+        - ""
+        - "&cYou have claimed this reward come back in: &f%delivery_remaining_custom-delivery%"
+    no_permission_item:
+      material: MINECART
+      name: "&7Daily Delivery"
+      lore:
+        - "&fClaim your daily delivery"
+        - ""
+        - "&cYou don't have permission to claim this reward."
+```
+
+There are all the bare required entries for a delivery to work. All the three `item`, `claimed_item` and `no_permission_item` are mandatory to be set.

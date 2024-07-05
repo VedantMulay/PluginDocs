@@ -4,22 +4,16 @@ import { DocsThemeConfig } from 'nextra-theme-docs'
 const config: DocsThemeConfig = {
   logo: <span>Lumina Games</span>,
   project: {
-    link: 'https://github.com/shuding/nextra-docs-template',
+    link: 'https://github.com/LuminaGames',
   },
   chat: {
-    link: 'https://discord.com',
+    link: 'https://discord.gg/U6BjjKzvpE',
   },
-  docsRepositoryBase: 'https://github.com/shuding/nextra-docs-template',
+  docsRepositoryBase: 'https://github.com/VedantMulay/PluginDocs',
   useNextSeoProps() {
     return {
       titleTemplate: '%s - Lumina Games'
     }
-  },
-  banner: {
-    dismissible: true,
-    key: 'info-banner',
-    text: 'This documentation is under construction!'
-
   },
   sidebar: {
     defaultMenuCollapseLevel: 1

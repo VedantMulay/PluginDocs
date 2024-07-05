@@ -1,0 +1,42 @@
+# Adding Items to a menu
+
+Now that you've learnt to create custom deliveries let's add them to menus.
+
+You can create menus using the file `menus.yml` located in the plugin's folder.
+
+### Example Menu Configuration
+
+```yaml filename="menus.yml"
+custom-menu:
+  name: "Menu Name"
+  rows: 3
+  items:
+    delivery-item:
+      type: DELIVERY
+      slot: 13
+      # This is your delivery ID form deliveries.yml
+      # Plugin will automatically add the item you configured in the file here
+      id: delivery-id
+    # You can add same delivery multiple times
+    # All the items will be updated automatically on claiming or clicking something.
+    # Useful for making custom GUIs
+    delivery-item-2:
+      type: DELIVERY
+      slot: 14
+      id: delivery-id
+
+    #Normal Vanilla Item
+    close-item:
+      type: ITEM
+      slot: 22
+      material: BARRIER
+      name: "&cClose"
+      lore:
+        - "&fClose the menu."
+      item_flags:
+        - HIDE_ENCHANTS
+      #For more info on Actions refer to actions section in docs
+      action:
+        - '[CLOSE]'
+
+```

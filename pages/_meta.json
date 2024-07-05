@@ -20,6 +20,10 @@
     "title": "Neptune Core",
     "type": "page"
   },
+  "delivery": {
+    "title": "Delivery",
+    "type": "page"
+  },
   "fe60c0b529bf706c195d-moondrop": {
     "title": "Neptune Core",
     "type": "page",

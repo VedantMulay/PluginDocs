@@ -1,0 +1,21 @@
+# Item Actions
+
+Actions are the things that you can make the plugin do when clicking an item or claiming a delivery etc.
+
+Here are all the actions that you can use with the plugin. The usage supports Placeholder API placeholders.
+
+
+| Action      | Description                                 | Usage                                              |
+|-------------|---------------------------------------------|----------------------------------------------------|
+| [COMMAND]   | Execute a command as a player               | [COMMAND] say Hello!                               |
+| [CONSOLE]   | Execute a command as a console              | [CONSOLE] give %player_name% gold_ingot 1          |
+| [ACTIONBAR] | Show a action bar to a player               | [ACTIONBAR] &aHello there %player_name%            |
+| [BUNGEE]    | Send a player to a bungeecord server        | [BUNGEE] bedwars                                   |
+| [CLOSE]     | Close a currently open menu from the plugin | [CLOSE]                                            |
+| [GAMEMODE]  | Change a player's gamemode                  | [GAMEMODE] CREATIVE                                |
+| [MESSAGE]   | Send the player a message                   | [MESSAGE] &cYou do not have permission!            |
+| [OPEN]      | Open a plugin delivery menu to the player   | [OPEN] manu-id                                     |
+| [EFFECT]    | Give a potion effect to a player            | `[EFFECT] SPEED;level`                             |
+| [BROADCAST] | Broadcast a message to the entire server    | [BROADCAST] &6%player_name% has claimed a delivery |
+| [SOUND]     | Play a minecraft sound to the player        | [SOUND] ENTITY_PLAYER_LEVELUP                      |
+| [TITLE]     | Send a title to a player                    | `[TITLE] <title;subtitle;fadein;stay;fadeout>`     |
