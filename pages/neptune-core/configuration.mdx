@@ -1,0 +1,85 @@
+## Configuration
+
+### MOTD
+
+You can configure your server's MOTD using the `config.yml`
+
+```yaml filename="config.yml"  copy {5-7}
+server:
+  motd:
+    enabled: true
+    #Multi-Line Support
+    content: |-
+      Line 1 
+      Line 2
+```
+
+### Server Version Text
+
+You can customize the server text after hovering over the player count in the server list.
+Multiple lines are supported.
+
+```yaml filename="config.yml" copy {7-10}
+server:
+  motd:
+    enabled: true
+    content: |-
+      Line 1
+      Line 2
+  player-hover:
+    enabled: true
+    content:
+    - '&bNeptune Core :)'
+```
+
+### Maintenance Mode
+
+You can change the maintenance mode message through the config too.
+
+```yaml filename="config.yml" copy
+maintenance:
+  enabled: false
+  kick-message:
+  - '&cThe server is currently under maintenance'
+  - '&fPlease join back later'
+```
+
+### Lobby Servers & Fallback System
+
+For the command `/lobby` these servers will be used and for fall back system the rules and resons can be configured below.
+
+```yaml copy {13-25}
+server:
+  motd:
+    enabled: true
+    content: |-
+      Line 1
+      Line 2
+  player-hover:
+    enabled: true
+    content:
+    - '&bNeptune Core :)'
+  display-names:
+    lobby1: Lobby-1
+lobby-servers:
+- lobby
+fallback: true
+respect-limit: false
+ignored-reasons:
+- ban
+- kick
+- blacklist
+- maintenance
+ignored-servers:
+- bedwars
+- skywars
+- lifesteal
+maintenance:
+  enabled: false
+  kick-message:
+  - '&cThe server is currently under maintenance'
+  - '&fPlease join back later'
+metrics:
+  enable-bstats: true
+```
+
