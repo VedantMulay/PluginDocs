@@ -1,5 +1,6 @@
 {
     "index": "Overview",
     "commands": "Commands",
-    "database": "Database"
+    "database": "Database",
+    "webhooks": "Webhooks"
 }
