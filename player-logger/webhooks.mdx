@@ -1,0 +1,24 @@
+# Discord Webhook Logging
+
+In order to send your plugin logs to discord webhooks just do the following configuration in your plugins `config.yml`
+
+1. Go to your discord server and create a new webhook
+
+[Here's a tutorial on how you can make a discord webhook](https://www.youtube.com/watch?v=fKksxz2Gdnc)
+
+2. In the webhooks section of the configuration paste your webhook URL and change the `enabled` to `true`
+
+It should now look something like this
+
+```yaml filename="config.yml"  copy
+webhooks:
+    enabled: true
+    url: "WEBHOOK_URL"
+    settings:
+        send-join: true
+        send-leave: true
+```
+
+3. Restart your server
+
+Configure which updates to recieve in the settings section of the above config section.

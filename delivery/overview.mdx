@@ -1,0 +1,35 @@
+---
+sidebar_position: 1
+---
+
+import Card from '@site/src/components/Card/Card';
+import CardGrid from '@site/src/components/Card/CardGrid';
+import { FaFileContract, FaGavel, FaTerminal, FaCode } from 'react-icons/fa';
+
+# Welcome
+
+This website will guide you through the process of setting up the Delivery Master plugin.
+
+## Quick Information
+
+<CardGrid>
+
+  <Card
+    title="Custom Items"
+    description="Learn how to create custom items for delivery."
+    icon={<FaGavel />}
+    href="/delivery/custom-items/create"
+  />
+  <Card
+    title="Plugin Commands"
+    description="Get to know all of the plugin commands."
+    icon={<FaTerminal />}
+    href="/delivery/commands"
+  />
+  <Card
+    title="Terms of Service"
+    description="You automatically agree after purchasing this plugin."
+    icon={<FaFileContract />}
+    href="https://tos.vedant.lol"
+  />
+</CardGrid>
