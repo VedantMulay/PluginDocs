@@ -1,0 +1,23 @@
+# Commands and Permissions
+
+The plugin has only a few commands. Rest of the configuration can be done through the plugin config.
+
+
+View all of the setup commands [here](/config/creating_areas)
+
+
+* `/afkarea reload` - Reloads the plugin configuration. A server restart is still recommended
+if you are changing some major stuff related to regions such as commands.
+
+* `/afkarea list` - Lists all of the region in the config file. If a region shows up as enabled and is not working
+please restart your server.
+
+* `/area_debug` - A debug command that I made to check things in a area. Maybe it may help the admins to configure and test stuff for the area so I kept it.
+To enable this command change the value of `DEBUG_COMMAND` in `config.yml` to `true`
+
+* `/area_debug event <EVENT_NAME> <REGION>` - If you want to trigger and test events for a region you can do it using this commmad.
+Here is a list of events that can be trigged in the `EVENT_NAME` argument.
+
+1. `ON_REWARD_EVENT` - Simulate a player (yourself) of getting a reward.
+2. `ON_ENTER_EVENT` - Simulate a player (yourself) of entering the region.
+3. `ON_EXIT_EVENT` - Simulate a player (yourself) of exiting the region.

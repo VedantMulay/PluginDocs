@@ -15,7 +15,7 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://docs.vedant.lol',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -109,9 +109,24 @@ const config: Config = {
         // ... other options
       },
     ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'afk-area',
+        path: 'afk-area',
+        routeBasePath: 'afk-area',
+        sidebarPath: "./afkAreaSidebar.ts",
+        // ... other options
+      },
+    ],
   ],
 
   themeConfig: {
+    colorMode: {
+      defaultMode: 'dark',
+      disableSwitch: true,
+      respectPrefersColorScheme: false
+    },
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
@@ -125,7 +140,7 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Home',
         },
         { to: '/blog', label: 'Blog', position: 'left' },
         {
@@ -136,14 +151,25 @@ const config: Config = {
       ],
     },
     footer: {
-      style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Products',
           items: [
             {
-              label: 'Tutorial',
-              to: '/docs/intro',
+              label: 'Player Logger',
+              to: '/player-logger/overview',
+            },
+            {
+              label: 'Email Linker',
+              to: '/email-linker/overview',
+            },
+            {
+              label: 'Ultimate Bounty',
+              to: '/ultimate-bounty/overview',
+            },
+            {
+              label: 'Delivery Master',
+              to: '/delivery/overview',
             },
           ],
         },
