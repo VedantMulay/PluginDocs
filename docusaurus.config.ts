@@ -1,13 +1,13 @@
-import { themes as prismThemes } from 'prism-react-renderer';
-import type { Config } from '@docusaurus/types';
-import type * as Preset from '@docusaurus/preset-classic';
+import { themes as prismThemes } from "prism-react-renderer";
+import type { Config } from "@docusaurus/types";
+import type * as Preset from "@docusaurus/preset-classic";
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'Lumina Games',
-  tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  title: "Lumina Games",
+  tagline: "Dinosaurs are cool",
+  favicon: "img/favicon.ico",
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -15,196 +15,196 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://docs.vedant.lol',
+  url: "https://docs.vedant.lol",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: "/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: "facebook", // Usually your GitHub org/user name.
+  projectName: "docusaurus", // Usually your repo name.
 
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: "en",
+    locales: ["en"],
   },
 
   presets: [
     [
-      'classic',
+      "classic",
       {
         docs: {
-          sidebarPath: './sidebars.ts',
+          sidebarPath: "./sidebars.ts",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
         blog: {
           showReadingTime: true,
           feedOptions: {
-            type: ['rss', 'atom'],
+            type: ["rss", "atom"],
             xslt: true,
           },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
           // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
+          onInlineTags: "warn",
+          onInlineAuthors: "warn",
+          onUntruncatedBlogPosts: "warn",
         },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: "./src/css/custom.css",
         },
       } satisfies Preset.Options,
     ],
   ],
   plugins: [
     [
-      '@docusaurus/plugin-content-docs',
+      "@docusaurus/plugin-content-docs",
       {
-        id: 'player-logger',
-        path: 'player-logger',
-        routeBasePath: 'player-logger',
+        id: "player-logger",
+        path: "player-logger",
+        routeBasePath: "player-logger",
         sidebarPath: "./playerLoggerSidebar.ts",
         // ... other options
       },
     ],
     [
-      '@docusaurus/plugin-content-docs',
+      "@docusaurus/plugin-content-docs",
       {
-        id: 'email-linker',
-        path: 'email-linker',
-        routeBasePath: 'email-linker',
+        id: "email-linker",
+        path: "email-linker",
+        routeBasePath: "email-linker",
         sidebarPath: "./emailLinkerSidebar.ts",
         // ... other options
       },
     ],
     [
-      '@docusaurus/plugin-content-docs',
+      "@docusaurus/plugin-content-docs",
       {
-        id: 'ultimate-bounty',
-        path: 'ultimate-bounty',
-        routeBasePath: 'ultimate-bounty',
+        id: "ultimate-bounty",
+        path: "ultimate-bounty",
+        routeBasePath: "ultimate-bounty",
         sidebarPath: "./ultimateBountySidebar.ts",
         // ... other options
       },
     ],
     [
-      '@docusaurus/plugin-content-docs',
+      "@docusaurus/plugin-content-docs",
       {
-        id: 'delivery',
-        path: 'delivery',
-        routeBasePath: 'delivery',
+        id: "delivery",
+        path: "delivery",
+        routeBasePath: "delivery",
         sidebarPath: "./deliverySidebar.ts",
         // ... other options
       },
     ],
     [
-      '@docusaurus/plugin-content-docs',
+      "@docusaurus/plugin-content-docs",
       {
-        id: 'afk-area',
-        path: 'afk-area',
-        routeBasePath: 'afk-area',
+        id: "afk-area",
+        path: "afk-area",
+        routeBasePath: "afk-area",
         sidebarPath: "./afkAreaSidebar.ts",
-        // ... other options
       },
     ],
   ],
 
   themeConfig: {
+    
     colorMode: {
-      defaultMode: 'dark',
+      defaultMode: "dark",
       disableSwitch: true,
-      respectPrefersColorScheme: false
+      respectPrefersColorScheme: false,
     },
+
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: "img/docusaurus-social-card.jpg",
     navbar: {
-      title: 'Lumina Games',
+      title: "Lumina Games",
       logo: {
-        alt: 'Lumina Games',
-        src: 'img/logo.png',
+        alt: "Lumina Games",
+        src: "img/logo.png",
       },
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Home',
+          type: "docSidebar",
+          sidebarId: "tutorialSidebar",
+          position: "left",
+          label: "Home",
         },
-        { to: '/blog', label: 'Blog', position: 'left' },
         {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
-          position: 'right',
+          href: "https://github.com/facebook/docusaurus",
+          label: "GitHub",
+          position: "right",
         },
       ],
     },
     footer: {
       links: [
         {
-          title: 'Products',
+          title: "Products",
           items: [
             {
-              label: 'Player Logger',
-              to: '/player-logger/overview',
+              label: "Player Logger",
+              to: "/player-logger/overview",
             },
             {
-              label: 'Email Linker',
-              to: '/email-linker/overview',
+              label: "Email Linker",
+              to: "/email-linker/overview",
             },
             {
-              label: 'Ultimate Bounty',
-              to: '/ultimate-bounty/overview',
+              label: "Ultimate Bounty",
+              to: "/ultimate-bounty/overview",
             },
             {
-              label: 'Delivery Master',
-              to: '/delivery/overview',
+              label: "Delivery Master",
+              to: "/delivery/overview",
             },
           ],
         },
         {
-          title: 'Community',
+          title: "Community",
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: "Stack Overflow",
+              href: "https://stackoverflow.com/questions/tagged/docusaurus",
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: "Discord",
+              href: "https://discordapp.com/invite/docusaurus",
             },
             {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
+              label: "X",
+              href: "https://x.com/docusaurus",
             },
           ],
         },
         {
-          title: 'More',
+          title: "More",
           items: [
             {
-              label: 'Blog',
-              to: '/blog',
+              label: "Blog",
+              to: "/blog",
             },
             {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              label: "GitHub",
+              href: "https://github.com/facebook/docusaurus",
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Lumina Games. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
