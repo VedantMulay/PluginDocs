@@ -6,9 +6,12 @@ import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
   title: "Lumina Games",
-  tagline: "Dinosaurs are cool",
+  tagline: "Documentation for all products of Lumina Games",
   favicon: "img/favicon.ico",
-
+  themes: ['@docusaurus/theme-mermaid'],
+  markdown: {
+    mermaid: true,
+  },
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
@@ -46,21 +49,6 @@ const config: Config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
-        },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ["rss", "atom"],
-            xslt: true,
-          },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
-          // Useful options to enforce blogging best practices
-          onInlineTags: "warn",
-          onInlineAuthors: "warn",
-          onUntruncatedBlogPosts: "warn",
         },
         theme: {
           customCss: "./src/css/custom.css",
@@ -177,32 +165,28 @@ const config: Config = {
           title: "Community",
           items: [
             {
-              label: "Stack Overflow",
-              href: "https://stackoverflow.com/questions/tagged/docusaurus",
-            },
-            {
               label: "Discord",
-              href: "https://discordapp.com/invite/docusaurus",
+              href: "https://discord.gg/U6BjjKzvpE",
             },
             {
-              label: "X",
-              href: "https://x.com/docusaurus",
+              label: "GitHub",
+              href: "https://github.com/LuminaGames",
             },
           ],
         },
         {
-          title: "More",
+          title: "Other",
           items: [
             {
-              label: "Blog",
-              to: "/blog",
+              label: "Built By Bit",
+              href: "https://builtbybit.com/creators/comphack.307704/"
             },
             {
-              label: "GitHub",
-              href: "https://github.com/facebook/docusaurus",
-            },
-          ],
-        },
+              label: "SpigotMC",
+              href: "http://a.spiget.org/1167144"
+            }
+          ]
+        }
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Lumina Games. Built with Docusaurus.`,
     },
