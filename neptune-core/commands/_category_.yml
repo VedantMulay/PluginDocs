@@ -1,0 +1,10 @@
+position: 3
+label: 'Plugin Commands'
+collapsible: true
+collapsed: false
+className: red
+link:
+  type: generated-index
+  title: Installation
+customProps:
+  description: This description can be used in the swizzled DocCard

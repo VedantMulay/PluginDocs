@@ -1,30 +1,95 @@
 /**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
+ * CLEAN BLACK THEME — Docusaurus
+ * Minimal, modern, high-contrast
  */
 
-/* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  /* Brand accent (you can change this to blue, purple, etc) */
+  --ifm-color-primary: #3b82f6; /* Blue 500 */
+  --ifm-color-primary-dark: #2563eb;
+  --ifm-color-primary-darker: #1d4ed8;
+  --ifm-color-primary-light: #60a5fa;
+  --ifm-color-primary-lighter: #93c5fd;
+  --ifm-color-primary-lightest: #bfdbfe;
+
+  /* Base UI colors */
+  --ifm-background-color: #0b0d10;
+  --ifm-background-surface-color: #111418;
+
+  --ifm-font-color-base: #e5e7eb;
+  --ifm-font-color-secondary: #9ca3af;
+
+  --ifm-heading-color: #f9fafb;
+
+  /* Navbar & footer */
+  --ifm-navbar-background-color: #0b0d10;
+  --ifm-footer-background-color: #0b0d10;
+
+  /* Borders */
+  --ifm-toc-border-color: #1f2933;
+  --ifm-hr-border-color: #1f2933;
+
+  /* Code */
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-code-background: #111418;
+  --docusaurus-highlighted-code-line-bg: rgba(59, 130, 246, 0.15);
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
-  --ifm-color-primary: #4089e9;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+/* Force dark mode look even in light theme */
+html,
+body {
+  background-color: #0b0d10;
+  color: #e5e7eb;
+}
+
+/* Navbar */
+.navbar {
+  border-bottom: 1px solid #1f2933;
+}
+
+/* Sidebar */
+.menu {
+  background-color: #0b0d10;
+  border-right: 1px solid #1f2933;
+}
+
+.menu__link {
+  color: #9ca3af;
+}
+
+.menu__link--active,
+.menu__link:hover {
+  color: #ffffff;
+}
+
+/* Content cards */
+.card {
+  background: #111418;
+  border: 1px solid #1f2933;
+}
+
+/* Tables */
+table {
+  background: #111418;
+  border-color: #1f2933;
+}
+
+/* Code blocks */
+.prism-code {
+  background: #0f1216 !important;
+  border: 1px solid #1f2933;
+  border-radius: 8px;
+}
+
+/* Inline code */
+code {
+  background: #111418;
+  color: #60a5fa;
+  border-radius: 6px;
+  padding: 0.2em 0.4em;
+}
+
+/* Footer */
+.footer {
+  border-top: 1px solid #1f2933;
 }
