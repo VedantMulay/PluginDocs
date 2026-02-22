@@ -118,10 +118,18 @@ const config: Config = {
         sidebarPath: "./afkAreaSidebar.ts",
       },
     ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "neptune-core",
+        path: "neptune-core",
+        routeBasePath: "neptune-core",
+        sidebarPath: "./neptuneCoreSidebar.ts",
+      },
+    ],
   ],
 
   themeConfig: {
-    
     colorMode: {
       defaultMode: "dark",
       disableSwitch: true,
@@ -177,29 +185,33 @@ const config: Config = {
           title: "Community",
           items: [
             {
-              label: "Stack Overflow",
-              href: "https://stackoverflow.com/questions/tagged/docusaurus",
+              label: "GitHub",
+              href: "https://github.com/LuminaGames",
             },
             {
               label: "Discord",
-              href: "https://discordapp.com/invite/docusaurus",
+              href: "https://discord.com/invite/U6BjjKzvpE",
             },
             {
-              label: "X",
-              href: "https://x.com/docusaurus",
+              label: "Instagram",
+              href: "https://instagram.com/luminagames.in",
             },
           ],
         },
         {
-          title: "More",
+          title: "Download",
           items: [
             {
-              label: "Blog",
-              to: "/blog",
+              label: "Modrinth",
+              href: "https://modrinth.com/user/COMPHACK",
             },
             {
-              label: "GitHub",
-              href: "https://github.com/facebook/docusaurus",
+              label: "Built By Bit",
+              href: "https://builtbybit.com/creators/comphack.307704/",
+            },
+            {
+              label: "SpigotMC",
+              href: "https://www.spigotmc.org/members/comphack.1167144/",
             },
           ],
         },
