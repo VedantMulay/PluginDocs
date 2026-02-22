@@ -173,7 +173,6 @@ const config: Config = {
           title: "Community",
           items: [
             {
-<<<<<<< HEAD
               label: "GitHub",
               href: "https://github.com/LuminaGames",
             },
@@ -184,19 +183,10 @@ const config: Config = {
             {
               label: "Instagram",
               href: "https://instagram.com/luminagames.in",
-=======
-              label: "Discord",
-              href: "https://discord.gg/U6BjjKzvpE",
-            },
-            {
-              label: "GitHub",
-              href: "https://github.com/LuminaGames",
->>>>>>> 752d72b1d4b8c7005a3bc636ae88c302f1f90854
             },
           ],
         },
         {
-<<<<<<< HEAD
           title: "Download",
           items: [
             {
@@ -213,20 +203,6 @@ const config: Config = {
             },
           ],
         },
-=======
-          title: "Other",
-          items: [
-            {
-              label: "Built By Bit",
-              href: "https://builtbybit.com/creators/comphack.307704/"
-            },
-            {
-              label: "SpigotMC",
-              href: "http://a.spiget.org/1167144"
-            }
-          ]
-        }
->>>>>>> 752d72b1d4b8c7005a3bc636ae88c302f1f90854
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Lumina Games. Built with Docusaurus.`,
     },
