@@ -49,14 +49,16 @@ const PRODUCTS = [
   },
   {
     title: "AFK Area",
-    description: "Idle gameplay zones (Coming soon)",
+    description: "AFK zones for your lobby servers",
+    href: "/afk-area/overview",
     icon: <FaHouseUser />,
     category: "Minecraft Plugins",
   },
   {
     title: "Neptune Core",
-    description: "Shared core utilities (Coming soon)",
+    description: "Minecraft proxy server utilities",
     icon: <FaGlobe />,
+    href: "/neptune-core/overview",
     category: "Minecraft Plugins",
   },
   {

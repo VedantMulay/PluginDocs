@@ -8,7 +8,7 @@ const config: Config = {
   title: "Lumina Games",
   tagline: "Documentation for all products of Lumina Games",
   favicon: "img/favicon.ico",
-  themes: ['@docusaurus/theme-mermaid'],
+  themes: ["@docusaurus/theme-mermaid"],
   markdown: {
     mermaid: true,
   },
@@ -25,8 +25,8 @@ const config: Config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "facebook", // Usually your GitHub org/user name.
-  projectName: "docusaurus", // Usually your repo name.
+  organizationName: "LuminaGames", // Usually your GitHub org/user name.
+  projectName: "", // Usually your repo name.
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -140,8 +140,13 @@ const config: Config = {
           label: "Home",
         },
         {
-          href: "https://github.com/facebook/docusaurus",
+          href: "https://github.com/LuminaGames",
           label: "GitHub",
+          position: "right",
+        },
+        {
+          href: "https://discord.com/invite/U6BjjKzvpE",
+          label: "Discord",
           position: "right",
         },
       ],
