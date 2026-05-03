@@ -115,6 +115,15 @@ const config: Config = {
         sidebarPath: "./neptuneCoreSidebar.ts",
       },
     ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "waypoint",
+        path: "waypoint",
+        routeBasePath: "waypoint",
+        sidebarPath: "./waypointSidebar.ts",
+      },
+    ],
   ],
 
   themeConfig: {
@@ -138,6 +147,41 @@ const config: Config = {
           sidebarId: "tutorialSidebar",
           position: "left",
           label: "Home",
+        },
+        {
+          type: "dropdown",
+          label: "Plugins",
+          position: "left",
+          items: [
+            {
+              label: "Player Logger",
+              href: "/player-logger/overview",
+            },
+            {
+              label: "Waypoint",
+              href: "/waypoint/overview",
+            },
+            {
+              label: "Neptune Core",
+              href: "/neptune-core/overview",
+            },
+            {
+              label: "Ultimate Bounty",
+              href: "/ultimate-bounty/overview",
+            },
+            {
+              label: "AFK Area",
+              href: "/afk-area/overview",
+            },
+            {
+              label: "Delivery Master",
+              href: "/delivery/overview",
+            },
+            {
+              label: "Email Linker",
+              href: "/email-linker/overview",
+            },
+          ],
         },
         {
           href: "https://github.com/LuminaGames",

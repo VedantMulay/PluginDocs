@@ -1,0 +1,24 @@
+# Commands
+
+## Player Commands
+Commands in this section do not required any permission to run. Just plug and play!
+
+| Command                                | Description                      | Example                             |
+|----------------------------------------|----------------------------------|-------------------------------------|
+| `/waypoints`                           | Open the waypoints GUI           | `/waypoints`                        |
+| `/waypoint start <x> <y> <z> [player]` | Start a waypoint to a coordinate | `/waypoint start 12 54 12 COMPHACK` |
+| `/waypoint delete <identifier>`        | Delete a personal waypoint       | `/waypoint delete home`             |
+| `/waypoint stop`                       | Remove a ongoing waypoint        | `-`                                 |
+| `/waypoint global`                     | See global waypoint menu         | `-`                                 |
+| `/waypoint create`                     | Create a waypoint for yourself   | `-`                                 |
+
+## Admin Commands
+
+You can give the `waypoint.admin.*` permission to your admin/developers for configuration of the plugin.
+
+| Command                                         | Description                                               | Permission              |
+|-------------------------------------------------|-----------------------------------------------------------|-------------------------|
+| `/waypoint-admin create <id> [display name...]` | Create a global waypoint that all players can see and use | `waypoint.admin.create` |
+| `/waypoint-admin delete <id>`                   | Delete a waypoint                                         | `waypoint.admin.delete` |
+| `/waypoint-admin list`                          | List all global waypoints                                 | `waypoints.admin`       |
+
